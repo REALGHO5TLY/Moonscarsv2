@@ -1477,3 +1477,9 @@ native-code: '' 'arm64-v8a' 'armeabi-v7a'
 
 ## MoonscarsTouchControls instances
 - MonoBehaviour script 399 matches: 0
+
+## Attached components on MoonscarsTouchControls GameObject
+- Matching target GameObjects: 1
+- Target object path ID: 46
+  - Missing component; raw reference: ComponentPair(component=PPtr(m_FileID=0, m_PathID=100, assetsfile=<SerializedFile>))
+  - Missing component; raw reference: ComponentPair(component=PPtr(m_FileID=0, m_PathID=169, assetsfile=<SerializedFile>))

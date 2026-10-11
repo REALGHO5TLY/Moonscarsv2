@@ -1,0 +1,76 @@
+#!/usr/bin/env python3
+"""Metadata-only APK inspector: never commits or redistributes game assets."""
+from collections import Counter
+from hashlib import sha256
+from pathlib import Path
+import subprocess
+import sys
+import zipfile
+
+apk = Path(sys.argv[1])
+out = Path(sys.argv[2])
+out.parent.mkdir(parents=True, exist_ok=True)
+lines = ["# Moonscars Android APK: technical inspection", ""]
+def add(s=""):
+    lines.append(str(s))
+def code(cmd):
+    try:
+        p=subprocess.run(cmd,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,timeout=45)
+        return p.stdout[:15000] or "(no output)"
+    except Exception as e:
+        return f"Unavailable: {e}"
+add(f"- Filename: `{apk.name}`")
+add(f"- File size: {apk.stat().st_size:,} bytes")
+add(f"- SHA-256: `{sha256(apk.read_bytes()).hexdigest()}`")
+try:
+    with zipfile.ZipFile(apk) as z:
+        if z.testzip() is not None:
+            raise ValueError("CRC failed: file is corrupt")
+        names = z.namelist()
+        files = [i for i in z.infolist() if not i.is_dir()]
+        add(f"- ZIP entries: {len(files)}")
+        add(f"- DEX files: {', '.join(n for n in names if n.endswith('.dex')) or 'none'}")
+        add("")
+        add("## Likely port engine")
+        indicators = {
+            "Unity": ["assets/bin/Data/", "libunity.so", "libil2cpp.so"],
+            "Godot": ["libgodot_android.so", ".pck", "libgodot.so"],
+            "GameMaker": ["libyoyo.so", "assets/game.droid", "data.win"],
+            "SDL / native": ["libSDL2.so", "libSDL3.so"],
+            "Ren'Py": ["renpy/", "librenpy.so"],
+            "WebView / HTML": ["assets/www/", "index.html", "cordova.js"],
+            "MonoGame / FNA": ["libmonosgen", "Content/"],
+            "Switch emulator": ["libskyline.so", "libeden.so", "libyuzu.so"],
+        }
+        lower = [n.lower() for n in names]
+        for label, patterns in indicators.items():
+            matches = [pattern for pattern in patterns if any(pattern.lower() in path for path in lower)]
+            if matches:
+                add(f"- **{label}** indicators: {', '.join(matches)}")
+        add("")
+        add("## Native libraries")
+        libs=[i for i in files if i.filename.startswith("lib/") and i.filename.endswith(".so")]
+        for i in sorted(libs,key=lambda i:i.filename)[:150]:
+            add(f"- `{i.filename}` ({i.file_size:,} bytes)")
+        if not libs: add("- none")
+        add("")
+        add("## Top-level and assets overview")
+        categories=Counter(n.split("/")[0] for n in names)
+        for a,b in categories.most_common(35): add(f"- {a}: {b} entries")
+        add("")
+        add("## Potential control mappings/config resources")
+        keywords=("touch","input","control","button","joystick","keymap","keyboard","gamepad","controller","overlay","config","prefs")
+        for i in files:
+            if any(w in i.filename.lower() for w in keywords) and i.file_size < 2000000:
+                add(f"- `{i.filename}` ({i.file_size:,} bytes)")
+                if len(lines)>650: break
+        add("")
+        add("## Android manifest / package information")
+        add("~~~")
+        command = ["aapt","dump","badging",str(apk)]
+        add(code(command))
+        add("~~~")
+except Exception as e:
+    add(f"ERROR reading APK: {type(e).__name__}: {e}")
+out.write_text("\n".join(lines)+"\n")
+print("\n".join(lines)[:24000])

@@ -1071,3 +1071,409 @@ native-code: '' 'arm64-v8a' 'armeabi-v7a'
 - MonoScript | InputActionAssetManager | path ID 1177
 - MonoScript | MenuItemToggleCollisionLayer | path ID 1178
 - MonoScript | UnitControllerEnemy15_Toxic | path ID 1179
+
+## GameObjects most likely to be editable mobile buttons
+- Matching GameObjects: 1040
+- AudioController | path ID 10
+- P_CreditsLinePair (1) | path ID 45
+- Control | path ID 47
+- P_CreditsLinePair (20) | path ID 48
+- P_CreditsLinePair (9) | path ID 50
+- P_CreditsLinePair (55) | path ID 54
+- P_CreditsLinePair (30) | path ID 58
+- Button | path ID 64
+- P_CreditsLinePair (77) | path ID 66
+- Button | path ID 77
+- P_CreditsLinePair (40) | path ID 88
+- P_CreditsLinePair (58) | path ID 98
+- Control | path ID 101
+- P_CreditsLinePair (3) | path ID 102
+- P_CreditsLinePair (69) | path ID 110
+- P_CreditsLine | path ID 114
+- P_CreditsLinePair (42) | path ID 117
+- P_CreditsLinePair (79) | path ID 124
+- P_CreditsLinePair (50) | path ID 126
+- P_CreditsLinePair (76) | path ID 131
+- P_CreditsLinePair (29) | path ID 132
+- P_CreditsLinePair (36) | path ID 138
+- P_CreditsLinePair (25) | path ID 152
+- P_CreditsLinePair (70) | path ID 160
+- P_CreditsHeader (5) | path ID 167
+- P_CreditsLinePair (31) | path ID 170
+- Button | path ID 174
+- P_CreditsLinePair (21) | path ID 182
+- P_CreditsLinePair (74) | path ID 186
+- P_CreditsLinePair (67) | path ID 187
+- Button | path ID 188
+- Button | path ID 192
+- P_CreditsLinePair (35) | path ID 195
+- Button | path ID 196
+- P_CreditsLinePair (7) | path ID 199
+- Button | path ID 204
+- P_CreditsLinePair (81) | path ID 205
+- P_CreditsLinePair (32) | path ID 209
+- P_CreditsLinePair (23) | path ID 211
+- Button | path ID 213
+- P_CreditsLinePair (33) | path ID 219
+- P_CreditsLinePair (37) | path ID 220
+- P_CreditsLinePair (66) | path ID 221
+- P_CreditsLinePair (62) | path ID 226
+- P_CreditsHeader (9) | path ID 232
+- P_CreditsLinePair (52) | path ID 233
+- P_CreditsLinePair (86) | path ID 234
+- P_CreditsLinePair (15) | path ID 239
+- P_CreditsLinePair (12) | path ID 241
+- P_CreditsLinePair (87) | path ID 245
+- Button | path ID 251
+- P_CreditsLinePair (17) | path ID 252
+- P_CreditsLinePair (84) | path ID 268
+- P_CreditsLinePair (59) | path ID 271
+- P_CreditsLinePair (49) | path ID 280
+- P_CreditsLinePair (78) | path ID 281
+- P_CreditsLinePair (46) | path ID 282
+- P_CreditsLinePair (28) | path ID 286
+- Button | path ID 288
+- P_CreditsLinePair (83) | path ID 289
+- P_CreditsLinePair (72) | path ID 295
+- P_CreditsLinePair (57) | path ID 296
+- P_CreditsLinePair (38) | path ID 303
+- Control | path ID 305
+- P_CreditsLinePair (18) | path ID 306
+- P_CreditsLinePair (73) | path ID 308
+- P_CreditsHeader (3) | path ID 311
+- Button | path ID 331
+- P_CreditsLinePair (61) | path ID 335
+- P_CreditsLinePair (51) | path ID 337
+- P_CreditsLinePair (80) | path ID 339
+- Control | path ID 340
+- P_CreditsHeader (10) | path ID 342
+- P_CreditsLinePair (54) | path ID 356
+- P_CreditsLinePair (10) | path ID 358
+- Button | path ID 359
+- Control | path ID 364
+- Control | path ID 367
+- P_CreditsHeader (6) | path ID 371
+- P_Credits_ScrollView | path ID 373
+- P_CreditsLinePair (39) | path ID 379
+- Control | path ID 380
+- P_CreditsLinePair (22) | path ID 381
+- P_CreditsLinePair (56) | path ID 383
+- Control | path ID 390
+- Control | path ID 393
+- P_CreditsLinePair (2) | path ID 394
+- Button | path ID 397
+- P_CreditsLinePair (48) | path ID 401
+- P_CreditsLinePair (19) | path ID 403
+- P_CreditsLinePair (63) | path ID 406
+- P_CreditsLinePair (11) | path ID 410
+- P_CreditsLinePair (44) | path ID 411
+- P_CreditsLinePair (13) | path ID 413
+- P_CreditsLinePair (68) | path ID 418
+- P_CreditsLinePair (8) | path ID 427
+- OkButton | path ID 440
+- OkButton | path ID 441
+- Control | path ID 444
+- P_CreditsLinePair (14) | path ID 445
+- P_CreditsLinePair (85) | path ID 446
+- P_ControlsPopup | path ID 450
+- P_CreditsPopup | path ID 451
+- P_CreditsLinePair (16) | path ID 456
+- Control | path ID 457
+- P_CreditsLinePair (45) | path ID 459
+- P_CreditsHeader (2) | path ID 462
+- Control | path ID 476
+- P_CreditsLinePair (6) | path ID 477
+- P_CreditsLinePair (26) | path ID 486
+- P_CreditsLinePair (75) | path ID 488
+- P_CreditsLinePair (65) | path ID 492
+- Button | path ID 500
+- P_CreditsLinePair (71) | path ID 502
+- Control | path ID 504
+- P_CreditsLinePair (24) | path ID 505
+- P_CreditsLinePair (60) | path ID 507
+- P_CreditsLinePair (82) | path ID 513
+- Control | path ID 515
+- P_CreditsLinePair (53) | path ID 527
+- Button | path ID 528
+- P_CreditsLinePair (64) | path ID 533
+- P_CreditsLinePair (4) | path ID 537
+- P_CreditsLinePair (43) | path ID 539
+- P_CreditsHeader (7) | path ID 542
+- P_CreditsLinePair (5) | path ID 549
+- P_CreditsLinePair (41) | path ID 550
+- P_CreditsHeader (4) | path ID 554
+- P_CreditsLinePair (47) | path ID 555
+- P_CreditsHeader (8) | path ID 560
+- P_CreditsLinePair (34) | path ID 561
+- P_CreditsHeader (11) | path ID 571
+- Button | path ID 574
+- Control | path ID 577
+- Control | path ID 579
+- P_CreditsLinePair | path ID 580
+- P_CreditsHeader | path ID 582
+- P_CreditsLinePair (27) | path ID 586
+- P_CreditsHeader | path ID 7
+- VibrationController | path ID 8
+- ButtonOptions | path ID 13
+- ButtonStart | path ID 15
+- ButtonCredits | path ID 24
+- AlternateCredits | path ID 29
+- P_SaveSlotButton1 | path ID 45
+- Control | path ID 48
+- Credits | path ID 57
+- P_Credits_ScrollView | path ID 61
+- Control | path ID 63
+- ButtonQuit | path ID 65
+- Credits- | path ID 72
+- MainButtons- | path ID 77
+- P_CreditsHeader (4) | path ID 90
+- P_CreditsLinePair (35) | path ID 92
+- P_CreditsHeader (7) | path ID 95
+- P_CreditsLinePair (37) | path ID 99
+- P_CreditsLinePair (55) | path ID 103
+- P_CreditsLinePair (58) | path ID 104
+- P_CreditsLinePair (42) | path ID 106
+- P_CreditsLinePair (79) | path ID 109
+- P_CreditsLinePair (80) | path ID 110
+- P_CreditsLinePair (63) | path ID 116
+- P_CreditsLinePair (75) | path ID 121
+- P_CreditsHeader (11) | path ID 123
+- P_CreditsLinePair (64) | path ID 127
+- P_CreditsLinePair (11) | path ID 129
+- P_CreditsLinePair (3) | path ID 130
+- P_CreditsLinePair (9) | path ID 131
+- P_CreditsLinePair (8) | path ID 132
+- P_CreditsLinePair (10) | path ID 133
+- P_CreditsLinePair (12) | path ID 134
+- P_CreditsLinePair (5) | path ID 135
+- P_CreditsLinePair (4) | path ID 136
+- P_CreditsLinePair (1) | path ID 137
+- P_CreditsLinePair (6) | path ID 138
+- P_CreditsLinePair (2) | path ID 139
+- P_CreditsLinePair (7) | path ID 140
+- P_CreditsHeader (5) | path ID 143
+- Control | path ID 155
+- P_CreditsLinePair (66) | path ID 160
+- P_CreditsLinePair (77) | path ID 165
+- P_SaveSlotButton2 | path ID 169
+- P_SaveSlotButton3 | path ID 178
+- P_CreditsLinePair (20) | path ID 188
+- P_CreditsLinePair (56) | path ID 192
+- P_CreditsLinePair (25) | path ID 197
+- P_CreditsLinePair (47) | path ID 201
+- P_CreditsLinePair (86) | path ID 205
+- P_CreditsLinePair | path ID 207
+- P_CreditsLinePair (62) | path ID 215
+- P_CreditsLinePair (24) | path ID 221
+- P_CreditsLinePair (44) | path ID 240
+- P_CreditsLinePair (61) | path ID 241
+- P_CreditsLinePair (46) | path ID 252
+- P_CreditsLinePair (85) | path ID 254
+- P_CreditsHeader (10) | path ID 259
+- P_CreditsLinePair (68) | path ID 264
+- P_CreditsLinePair (27) | path ID 265
+- P_CreditsLinePair (36) | path ID 269
+- P_CreditsLinePair (14) | path ID 270
+- Control | path ID 278
+- Control | path ID 279
+- Control | path ID 285
+- Control | path ID 306
+- P_CreditsLinePair (84) | path ID 321
+- P_CreditsLinePair (17) | path ID 323
+- P_CreditsLinePair (30) | path ID 325
+- P_CreditsLinePair (21) | path ID 329
+- OkButton | path ID 344
+- OkButton | path ID 355
+- P_CreditsLinePair (29) | path ID 364
+- P_CreditsLinePair (39) | path ID 377
+- Control | path ID 385
+- P_CreditsHeader (3) | path ID 394
+- P_CreditsLinePair (72) | path ID 396
+- P_CreditsHeader (6) | path ID 398
+- P_CreditsLinePair (32) | path ID 403
+- Control | path ID 407
+- P_CreditsLinePair (34) | path ID 413
+- P_CreditsLinePair (26) | path ID 414
+- P_CreditsLinePair (43) | path ID 417
+- P_CreditsLinePair (53) | path ID 418
+- P_CreditsLinePair (33) | path ID 423
+- P_CreditsLinePair (41) | path ID 425
+- P_CreditsLinePair (18) | path ID 430
+- Button | path ID 434
+- P_CreditsLinePair (50) | path ID 435
+- P_CreditsLinePair (52) | path ID 436
+- P_CreditsLine | path ID 438
+- P_CreditsLinePair (81) | path ID 450
+- P_CreditsLinePair (76) | path ID 463
+- P_CreditsHeader (8) | path ID 464
+- P_CreditsHeader (9) | path ID 467
+- P_CreditsLinePair (71) | path ID 470
+- P_CreditsLinePair (13) | path ID 472
+- P_CreditsLinePair (78) | path ID 476
+- P_CreditsLinePair (49) | path ID 481
+- P_CreditsLinePair (87) | path ID 482
+- P_CreditsLinePair (65) | path ID 483
+- P_CreditsLinePair (60) | path ID 488
+- P_CreditsLinePair (73) | path ID 493
+- P_CreditsLinePair (69) | path ID 496
+- Control | path ID 508
+- Control | path ID 513
+- P_CreditsLinePair (40) | path ID 515
+- P_CreditsLinePair (82) | path ID 521
+- P_CreditsLinePair (22) | path ID 525
+- P_CreditsLinePair (31) | path ID 527
+- P_CreditsLinePair (54) | path ID 535
+- P_CreditsLinePair (15) | path ID 536
+- Control | path ID 542
+- P_CreditsLinePair (51) | path ID 548
+- P_CreditsLinePair (23) | path ID 553
+- P_CreditsLinePair (59) | path ID 555
+- P_CreditsLinePair (38) | path ID 558
+- P_CreditsLinePair (28) | path ID 559
+- P_CreditsLinePair (74) | path ID 563
+- P_CreditsLinePair (19) | path ID 566
+- P_CreditsLinePair (83) | path ID 567
+- P_CreditsHeader (2) | path ID 569
+- Button | path ID 570
+- P_CreditsLinePair (70) | path ID 573
+- P_CreditsLinePair (67) | path ID 587
+- P_CreditsLinePair (48) | path ID 588
+- P_CreditsLinePair (45) | path ID 590
+- P_CreditsLinePair (16) | path ID 594
+- Control | path ID 597
+- P_Controls | path ID 599
+- P_CreditsLinePair (57) | path ID 605
+- TelegramButton | path ID 608
+- AudioController | path ID 610
+- InteractController | path ID 225
+- InteractController | path ID 250
+- InteractController | path ID 251
+- SlowMoController | path ID 9
+- GamepadVibration | path ID 10
+- TutorialController | path ID 17
+- LayeredMusicController | path ID 24
+- OnGUIController | path ID 25
+- DialogueController | path ID 29
+- PlayerGravesController | path ID 33
+- SceneController | path ID 39
+- MoonscarsTouchControls | path ID 46
+- AudioController | path ID 53
+- P_SavePointPickerButton | path ID 625
+- P_DevButton | path ID 626
+- P_SavePointGroupPickerButton | path ID 627
+- P_InventoryItemButton | path ID 628
+- P_ShopItemButton | path ID 633
+- SpellIcon | path ID 5
+- ToggleSpells | path ID 25
+- ButtonLT | path ID 27
+- ButtonRT | path ID 40
+- AmuletButton 3 | path ID 51
+- TravelButton | path ID 65
+- ReinforceButton | path ID 79
+- AmuletButton 2 | path ID 104
+- ToggleSpells | path ID 111
+- ButtonList | path ID 118
+- Button | path ID 122
+- Spell Cost | path ID 124
+- AmuletButton 1 | path ID 130
+- Button1 | path ID 148
+- ButtonLB | path ID 150
+- SpellsView- | path ID 182
+- Button2 | path ID 201
+- ButtonLT | path ID 275
+- SpellIcon | path ID 301
+- Button1 | path ID 304
+- MoonhungerButton | path ID 322
+- RegenerateSpecialButton | path ID 324
+- Button2 | path ID 344
+- Scroll View - Spells+ | path ID 348
+- SpellIcon | path ID 368
+- Button2 | path ID 400
+- Spell Name | path ID 401
+- AmuletButton 4 | path ID 406
+- Button1 | path ID 411
+- ButtonList | path ID 424
+- Spells | path ID 447
+- SpellSlots | path ID 452
+- SpellsButton | path ID 458
+- Credits | path ID 476
+- ButtonRT | path ID 479
+- ButtonLB | path ID 509
+- ButtonRB | path ID 518
+- Button3 | path ID 519
+- Spell Description | path ID 523
+- ButtonRB | path ID 538
+- SpellIcon | path ID 567
+- Button3 | path ID 577
+- Button3 | path ID 602
+- Button | path ID 621
+- Button | path ID 623
+- P_Map_PredefinedMarker_LongDash | path ID 684
+- Control | path ID 705
+- ButtonImage | path ID 766
+- Button | path ID 772
+- Control | path ID 844
+- SpellIcon | path ID 861
+- SpellIcon | path ID 862
+- P_Map_PredefinedMarker_LongDash | path ID 948
+- P_Map_PredefinedMarker_LongDash | path ID 1041
+- ButtonImage | path ID 1057
+- Control | path ID 1126
+- Control | path ID 1129
+- P_InventorySpellButton3 | path ID 1150
+- Control | path ID 1184
+- P_Map_PredefinedMarker_LongDash | path ID 1207
+- P_Map_PredefinedMarker_LongDash | path ID 1232
+- Control | path ID 1373
+- P_Controls | path ID 1374
+- Button | path ID 1381
+- OkButton | path ID 1411
+- P_PopupLearnSpellsMemo | path ID 1417
+- OkButton | path ID 1429
+- OkButton | path ID 1430
+- OkButton | path ID 1439
+- OkButton | path ID 1447
+- P_PopupSuperdashUnlocked | path ID 1452
+- OkButton | path ID 1457
+- OkButton | path ID 1469
+- OkButton | path ID 1482
+- OkButton | path ID 1483
+- OkButton | path ID 1500
+- OkButton | path ID 1503
+- OkButton | path ID 1532
+- OkButton | path ID 1544
+- P_PopupSuperdash | path ID 1550
+- OkButton | path ID 1560
+- OkButton | path ID 1576
+- OkButton | path ID 1582
+- OkButton | path ID 1586
+- OkButton | path ID 1587
+- P_PopupSuperdashLack | path ID 1595
+- OkButton | path ID 1621
+- OkButton | path ID 1650
+- OkButton | path ID 1671
+- P_PopupParry | path ID 1673
+- OkButton | path ID 1683
+- OkButton | path ID 1696
+- OkButton | path ID 1708
+- OkButton | path ID 1711
+- P_PopupMoreSpells | path ID 1712
+- OkButton | path ID 1726
+- OkButton | path ID 1730
+- OkButton | path ID 1744
+- P_PopupSpellLearned | path ID 1745
+- OkButton | path ID 1747
+- OkButton | path ID 1758
+- OkButton | path ID 1764
+- P_PopupSpecialWithDash | path ID 1765
+- P_PopupControls | path ID 1767
+- OkButton | path ID 1778
+- OkButton | path ID 1788
+- OkButton | path ID 1789
+- OkButton | path ID 1802
+- OkButton | path ID 1814
+- OkButton | path ID 1820
+- OkButton | path ID 1826
+
+## MoonscarsTouchControls instances
+- MonoBehaviour script 399 matches: 0

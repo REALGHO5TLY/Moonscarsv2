@@ -65,6 +65,48 @@ try:
                 add(f"- `{i.filename}` ({i.file_size:,} bytes)")
                 if len(lines)>650: break
         add("")
+        add("## APKVision control configuration structure")
+        import json
+        if "assets/AVConfig.json" in names:
+            try:
+                obj = json.loads(z.read("assets/AVConfig.json").decode("utf-8-sig"))
+                def short(v):
+                    if isinstance(v, dict):
+                        return f"object with {len(v)} keys"
+                    if isinstance(v, list):
+                        return f"array of {len(v)} items"
+                    s=str(v).replace("\\n"," ")
+                    return (s[:96]+"…" if len(s)>96 else s)
+                add(f"- Root type: {type(obj).__name__}")
+                if isinstance(obj,dict):
+                    for k,v in list(obj.items())[:100]:
+                        add(f"- Root \`{k}\`: {short(v)}")
+                elif isinstance(obj,list):
+                    add(f"- Root items: {len(obj)}")
+                add("")
+                add("### Matching input / touch / menu paths")
+                match_words=("touch","input","control","button","joystick","keymap","keyboard","gamepad","controller","overlay","bind","press","stick","dpad","opacity","scale","position","size","toggle","axis","hud","gesture","keycode")
+                hits=[]
+                def visit(node,path,depth=0):
+                    if depth>11 or len(hits)>=230: return
+                    if isinstance(node,dict):
+                        for k,v in node.items():
+                            kp=f"{path}.{k}"
+                            if any(w in kp.lower() for w in match_words):
+                                hits.append((kp,short(v)))
+                            visit(v,kp,depth+1)
+                    elif isinstance(node,list):
+                        for i,v in enumerate(node[:45]):
+                            visit(v,f"{path}[{i}]",depth+1)
+                visit(obj,"root")
+                if hits:
+                    for p,v in hits:
+                        add(f"- \`{p}\`: {v}")
+                else:
+                    add("- No matching labels; the configuration may use numeric or obfuscated field names.")
+            except Exception as e:
+                add(f"- Unable to parse AVConfig.json as JSON: {e}")
+        add("")
         add("## Android manifest / package information")
         add("~~~")
         command = ["aapt","dump","badging",str(apk)]

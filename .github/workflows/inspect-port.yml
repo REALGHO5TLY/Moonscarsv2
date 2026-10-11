@@ -9,7 +9,7 @@ on:
       - 'tools/inspect_apk.py'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   inspect:
@@ -46,3 +46,19 @@ jobs:
           path: out/apk-report.md
           if-no-files-found: warn
           retention-days: 7
+
+      - name: Publish non-copyrighted technical report to repo
+        if: always()
+        shell: bash
+        run: |
+          if [ -f out/apk-report.md ]; then
+            mkdir -p reports
+            cp out/apk-report.md reports/apk-report.md
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add reports/apk-report.md
+            if ! git diff --cached --quiet; then
+              git commit -m "Report Moonscars APK engine and control metadata"
+              git push || echo "Could not publish report to repository; check Actions artifact instead."
+            fi
+          fi

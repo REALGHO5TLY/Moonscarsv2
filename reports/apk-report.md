@@ -32,6 +32,9 @@
 - `assets/AVConfig.json` (176,220 bytes)
 - `assets/bin/Data/boot.config` (178 bytes)
 
+## APKVision control configuration structure
+- Unable to parse AVConfig.json as JSON: 'utf-8' codec can't decode byte 0xdd in position 17: invalid continuation byte
+
 ## Android manifest / package information
 ~~~
 package: name='com.vocies61.Moonscars' versionCode='1' versionName='1.0' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'

@@ -136,6 +136,13 @@ try:
             for s in matches: add(f"- \`{s.replace(chr(96),'')}\`")
             if not matches: add("- No clear-text matches")
         add("")
+
+        add("## Android classes present in the port")
+        dex=z.read("classes.dex")
+        classnames=sorted(set(m.group(0).decode("ascii","ignore") for m in __import__("re").finditer(rb"L(?:com|org|androidx)/[A-Za-z0-9_/$]{4,};", dex)))
+        for name in classnames[:240]:
+            add(f"- \`{name}\`")
+        add("")
         add("## Android manifest / package information")
         add("~~~")
         command = ["aapt","dump","badging",str(apk)]

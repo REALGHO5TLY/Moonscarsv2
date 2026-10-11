@@ -1,0 +1,48 @@
+name: Inspect Moonscars APK controls engine
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/inspect-port.yml'
+      - 'tools/inspect_apk.py'
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out project
+        uses: actions/checkout@v4
+      - name: Find preinstalled Android build tools
+        shell: bash
+        run: |
+          if [ -n "${ANDROID_HOME:-}" ] && [ -d "$ANDROID_HOME/build-tools" ]; then
+            tool="$(find "$ANDROID_HOME/build-tools" -maxdepth 2 -type f -name aapt | sort -V | tail -1)"
+            if [ -n "$tool" ]; then
+              echo "$(dirname "$tool")" >> "$GITHUB_PATH"
+            fi
+          fi
+      - name: Download Moonscars v1.0 into temporary runner storage
+        shell: bash
+        run: |
+          mkdir -p out
+          url="https://dl.apkvision.org/moonscars/Moonscars-v1.0-full-apkvision.apk"
+          if ! curl --fail --location --retry 2 --retry-delay 5 --connect-timeout 30 --max-time 600 -A 'Mozilla/5.0' "$url" -o /tmp/moonscars-original.apk; then
+            printf '# APK inspection unavailable\n\nThe original host did not allow the GitHub runner to download this APK. No game files were uploaded to GitHub.\n' > out/apk-report.md
+            exit 0
+          fi
+          file /tmp/moonscars-original.apk
+          python3 tools/inspect_apk.py /tmp/moonscars-original.apk out/apk-report.md
+      - name: Upload technical metadata (never APK)
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: moonscars-apk-technical-report
+          path: out/apk-report.md
+          if-no-files-found: warn
+          retention-days: 7

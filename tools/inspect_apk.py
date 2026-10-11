@@ -107,6 +107,35 @@ try:
             except Exception as e:
                 add(f"- Unable to parse AVConfig.json as JSON: {e}")
         add("")
+        add("## Full entry and size inventory")
+        for i in sorted(files,key=lambda v:v.filename):
+            add(f"- {i.filename}: {i.file_size:,} B")
+        add("")
+        add("## APKVision configuration binary identification")
+        if "assets/AVConfig.json" in names:
+            b = z.read("assets/AVConfig.json")
+            add(f"- First 64 bytes (hex): {b[:64].hex()}")
+            add(f"- Printable prefix: {repr(b[:80])}")
+            add(f"- ZIP magic: {b.startswith(bytes.fromhex('504b0304'))}")
+            add(f"- GZIP magic: {b.startswith(bytes.fromhex('1f8b'))}")
+        add("")
+        add("## Input-related readable strings (for locating existing overlay)")
+        import re
+        for file_to_check in ["classes.dex","lib/arm64-v8a/libAPKVISION.so","lib/arm64-v8a/libil2cpp.so"]:
+            if file_to_check not in names:
+                continue
+            raw=z.read(file_to_check)
+            matches=[]
+            for m in re.finditer(rb"[ -~]{6,150}",raw):
+                s=m.group(0).decode("ascii","ignore").strip()
+                if any(k in s.lower() for k in ("joystick","touchcontrol","touchscreen","keycode","virtualbutton","gamepad","buttonmapping","inputbridge","dpad","unitysendmessage","controllerlayout","controllerconfig","avconfig","keyevent","moonscars")):
+                    if s not in matches and len(s)<150:
+                        matches.append(s)
+                if len(matches)>=75: break
+            add(f"### {file_to_check}")
+            for s in matches: add(f"- \`{s.replace(chr(96),'')}\`")
+            if not matches: add("- No clear-text matches")
+        add("")
         add("## Android manifest / package information")
         add("~~~")
         command = ["aapt","dump","badging",str(apk)]

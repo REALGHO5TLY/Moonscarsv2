@@ -7,6 +7,7 @@ on:
     paths:
       - '.github/workflows/inspect-port.yml'
       - 'tools/inspect_apk.py'
+      - 'tools/inspect_unity.py'
 
 permissions:
   contents: write
@@ -38,6 +39,19 @@ jobs:
           fi
           file /tmp/moonscars-original.apk
           python3 tools/inspect_apk.py /tmp/moonscars-original.apk out/apk-report.md
+      - name: Inspect Unity gameplay control objects
+        shell: bash
+        run: |
+          python3 -m pip install --quiet --disable-pip-version-check UnityPy
+          python3 - <<'PY'
+          import zipfile
+          with zipfile.ZipFile('/tmp/moonscars-original.apk') as z:
+              z.extract('assets/bin/Data/data.unity3d', '/tmp/moonscars-inspect')
+          PY
+          timeout 150s python3 tools/inspect_unity.py /tmp/moonscars-inspect/assets/bin/Data/data.unity3d out/unity-report.md || true
+          if [ -f out/unity-report.md ]; then
+            cat out/unity-report.md >> out/apk-report.md
+          fi
       - name: Upload technical metadata (never APK)
         uses: actions/upload-artifact@v4
         if: always()

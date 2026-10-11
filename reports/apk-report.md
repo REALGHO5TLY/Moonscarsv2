@@ -623,3 +623,451 @@ densities: '120' '160' '240' '320' '480' '640'
 native-code: '' 'arm64-v8a' 'armeabi-v7a'
 
 ~~~
+# Unity scene/input UI inspection
+
+- UnityPy: 1.25.4
+- Total Unity objects: 276281
+
+## Type counts
+- MonoBehaviour: 66570
+- GameObject: 65798
+- Transform: 53289
+- SpriteRenderer: 34949
+- RectTransform: 12509
+- CanvasRenderer: 10013
+- Sprite: 9389
+- BoxCollider2D: 4849
+- CircleCollider2D: 2306
+- ParticleSystem: 2072
+- ParticleSystemRenderer: 2072
+- Rigidbody2D: 1861
+- AudioClip: 1734
+- MonoScript: 1525
+- CanvasGroup: 1188
+- Canvas: 1124
+- Texture2D: 705
+- CapsuleCollider2D: 590
+- MeshRenderer: 586
+- AnimationClip: 582
+- SpriteMask: 442
+- Animator: 303
+- SortingGroup: 285
+- SpriteShapeRenderer: 282
+- PlatformEffector2D: 149
+- PolygonCollider2D: 148
+- Material: 94
+- Shader: 81
+- PreloadData: 73
+- RenderSettings: 72
+- LightmapSettings: 72
+- NavMeshSettings: 72
+- MeshFilter: 69
+- Grid: 60
+- AnimatorController: 57
+- TilemapRenderer: 51
+- Tilemap: 51
+- CompositeCollider2D: 50
+- LineRenderer: 25
+- AudioSource: 23
+
+## Objects likely part of touch/control UI
+- MonoScript | ControlPlayableAsset | path ID 7
+- MonoScript | TMP_InputField | path ID 8
+- MonoScript | ControlTrack | path ID 14
+- MonoScript | SpriteShapeController | path ID 17
+- MonoScript | TMP_Settings | path ID 25
+- MonoScript | MapPredefinedMarker | path ID 27
+- MonoScript | LayoutRebuilder | path ID 30
+- MonoScript | InputActionAssetIconLoader | path ID 37
+- MonoScript | InputSystemUIInputModule | path ID 38
+- MonoScript | ActionMapsView | path ID 40
+- MonoScript | IInputEventTypeInfo | path ID 41
+- MonoScript | MoonhungerIndicatorHUD | path ID 42
+- MonoScript | QuerySelfHealthInRange | path ID 43
+- MonoScript | StateActionJump | path ID 44
+- MonoScript | SpritesheetController | path ID 46
+- MonoScript | PlayerAnimatorController | path ID 47
+- MonoScript | LocalizeTarget_UnityUI_Image | path ID 51
+- MonoScript | InputActionParameters | path ID 52
+- MonoScript | MapPredefinedMarkerCollectible | path ID 53
+- MonoScript | BossLaiosStalactitesController | path ID 54
+- MonoScript | Vector2Control | path ID 57
+- MonoScript | ItemsHUDController | path ID 59
+- MonoScript | InputEventListener | path ID 60
+- MonoScript | InputExitPlayModeAnalytic | path ID 61
+- MonoScript | UIPolygon | path ID 64
+- MonoScript | HealingTrigger | path ID 72
+- MonoScript | XInputControllerWindows | path ID 76
+- MonoScript | UnitAnimatorControllerBossIrma1 | path ID 77
+- MonoScript | UIBehaviour | path ID 78
+- MonoScript | UnitPawnSpawnerSettings | path ID 82
+- MonoScript | InputActionProperty | path ID 83
+- MonoScript | GenericSettingsSO | path ID 87
+- MonoScript | CanvasScaler | path ID 88
+- MonoScript | InputFieldEnterSubmit | path ID 91
+- MonoScript | XInputSupport | path ID 92
+- MonoScript | IInputActionCollection | path ID 96
+- MonoScript | HealthbarBuildupIndicator | path ID 99
+- MonoScript | InventoryItemDetailView | path ID 103
+- MonoScript | UICornerCut | path ID 104
+- MonoScript | GamepadVibrationController | path ID 107
+- MonoScript | UnitModifierPlayerParryHeal | path ID 111
+- MonoScript | KeysUISO | path ID 112
+- MonoScript | GibsController | path ID 115
+- MonoScript | StateMachineAnimationSpeedController | path ID 120
+- MonoScript | InputInteractionContext | path ID 121
+- MonoScript | UnitControllerBossMoon2 | path ID 125
+- MonoScript | InputManagerStateMonitors | path ID 128
+- MonoScript | UnitControllerEnemy19_ElderMage | path ID 132
+- MonoScript | AchievementsControllerBase | path ID 134
+- MonoScript | BaseInput | path ID 135
+- MonoScript | ButtonWithOneModifier | path ID 136
+- MonoScript | RemoteInputPlayerConnection | path ID 137
+- MonoScript | InputActionAssetSearchProvider | path ID 139
+- MonoScript | PlayerItemSpellModifiersApply | path ID 145
+- MonoScript | VirtualMouseInputEditorAnalytic | path ID 153
+- MonoScript | InventoryController | path ID 155
+- MonoScript | InputActionsEditorSettingsProvider | path ID 159
+- MonoScript | PlayerInputManagerEditorAnalytic | path ID 162
+- MonoScript | DiscreteButtonControl | path ID 172
+- MonoScript | SaveSlotButton | path ID 176
+- MonoScript | ProjectWideActionsBuildProvider | path ID 180
+- MonoScript | MainMenuController | path ID 186
+- MonoScript | BaseInputModule | path ID 187
+- MonoScript | EditorLinksSO | path ID 190
+- MonoScript | SerializedInputBinding | path ID 197
+- MonoScript | InputSettingsBuildProvider | path ID 198
+- MonoScript | SavePointGroupPickerButton | path ID 201
+- MonoScript | InputDeviceCommand | path ID 202
+- MonoScript | OnScreenStickEditorAnalytic | path ID 203
+- MonoScript | BossSculptorArenaController | path ID 204
+- MonoScript | UI_Knob | path ID 207
+- MonoScript | PlayerInputNewUI | path ID 208
+- MonoScript | TouchscreenControlPickerLayout | path ID 209
+- MonoScript | UIScrollToSelectionXY | path ID 211
+- MonoScript | DeveloperMenuButton | path ID 212
+- MonoScript | ButtonItemPickableSpell | path ID 216
+- MonoScript | InputDevice | path ID 220
+- MonoScript | InputActionDrawer | path ID 221
+- MonoScript | DeveloperMenuController | path ID 224
+- MonoScript | IInputActionAssetEditor | path ID 228
+- MonoScript | LaiosController | path ID 230
+- MonoScript | MapSaveIndicator | path ID 232
+- MonoScript | SpecialPickButton | path ID 234
+- MonoScript | ButtonItemPickable | path ID 243
+- MonoScript | ItemHUDWeapon | path ID 245
+- MonoScript | AudioUIDictionarySO | path ID 248
+- MonoScript | SDLDeviceBuilder | path ID 249
+- MonoScript | CharacterMenuController | path ID 254
+- MonoScript | InputExtensions | path ID 258
+- MonoScript | UnitControllerNPCBossOC | path ID 259
+- MonoScript | TouchInputModule | path ID 262
+- MonoScript | TouchPhaseControl | path ID 267
+- MonoScript | BlackScreenController | path ID 269
+- MonoScript | CreditsView | path ID 270
+- MonoScript | UnitModifierController | path ID 277
+- MonoScript | FastTouchscreen | path ID 286
+- MonoScript | InputActionReferencePropertyDrawer | path ID 288
+- MonoScript | PoseControl | path ID 289
+- MonoScript | UIAdditiveEffect | path ID 297
+- MonoScript | TilemapPrefabHelper | path ID 302
+- MonoScript | InputEditorUserSettings | path ID 304
+- MonoScript | AchievementParry | path ID 305
+- MonoScript | PlayerInputNewUniversal | path ID 306
+- MonoScript | DeltaControl | path ID 310
+- MonoScript | UIFlippable | path ID 311
+- MonoScript | PlayerItemSpellRenewal | path ID 315
+- MonoScript | UnitControllerBossSculptorChokranDash | path ID 317
+- MonoScript | MapElement | path ID 321
+- MonoScript | UnitModifierManaHealPenalty | path ID 322
+- MonoScript | IInputStateCallbackReceiver | path ID 324
+- MonoScript | InputActionsEditorConstants | path ID 329
+- MonoScript | ButtonSounds | path ID 336
+- MonoScript | Enemy12HealingWave | path ID 337
+- MonoScript | UI_ScrollRectOcclusion | path ID 338
+- MonoScript | InputActionsEditorView | path ID 343
+- MonoScript | InputActionAsset | path ID 348
+- MonoScript | UnitAnimatorControllerEnemy19ElderMage | path ID 352
+- MonoScript | InputActionsEditorWindowUtils | path ID 354
+- MonoScript | SwitchProControllerHID | path ID 355
+- MonoScript | QueryEditorWindowCoordinatesCommand | path ID 356
+- MonoScript | MapCustomMark | path ID 357
+- MonoScript | EnhancedTouchSupport | path ID 359
+- MonoScript | BraveryBonusPickButton | path ID 360
+- MonoScript | BossWandaArenaController | path ID 363
+- MonoScript | SwitchInput | path ID 364
+- MonoScript | OnGUIController | path ID 369
+- MonoScript | PlayerItemSpellDustBlast | path ID 372
+- MonoScript | QuaternionControl | path ID 373
+- MonoScript | InputControlPathDrawer | path ID 381
+- MonoScript | InputSystemPluginControl | path ID 383
+- MonoScript | InputSystemPackageControl | path ID 384
+- MonoScript | UnitAnimatorControllerEnemy21Fencer | path ID 388
+- MonoScript | VirtualMouseInput | path ID 391
+- MonoScript | MoonscarsTouchControls | path ID 399
+- MonoScript | CUIImage | path ID 401
+- MonoScript | DropDownListButton | path ID 403
+- MonoScript | GraphicRebuildTracker | path ID 406
+- MonoScript | CUIText | path ID 409
+- MonoScript | UnitInteractController | path ID 418
+- MonoScript | Event_General_FadeHUD | path ID 423
+- MonoScript | InputManager | path ID 424
+- MonoScript | MapArea | path ID 428
+- MonoScript | BaseInputOverride | path ID 429
+- MonoScript | UnitPawnBossSculptorChokranDash | path ID 430
+- MonoScript | UnitControllerDoppelganger | path ID 431
+- MonoScript | UIWindowBase | path ID 433
+- MonoScript | InputBinding | path ID 435
+- MonoScript | UnitModifierSCMaxHealth | path ID 439
+- MonoScript | InputComponentEditorAnalytic | path ID 445
+- MonoScript | UnitModifierSpellDamageOutput | path ID 450
+- MonoScript | TouchHistory | path ID 453
+- MonoScript | UnitAnimatorController | path ID 457
+- MonoScript | Button | path ID 458
+- MonoScript | HealthEntityPlayer | path ID 466
+- MonoScript | HealthEntityBossInfant | path ID 470
+- MonoScript | StandaloneInputModule | path ID 472
+- MonoScript | IInputControlPickerLayout | path ID 474
+- MonoScript | InputParameterEditor | path ID 476
+- MonoScript | MapController | path ID 477
+- MonoScript | InputActionTrace | path ID 478
+- MonoScript | AchievementItemAcquired | path ID 480
+- MonoScript | UnitControllerBossTheFirstOne | path ID 482
+- MonoScript | AudioController_CurrentInspectorSelection | path ID 483
+- MonoScript | InputActionImporterEditor | path ID 484
+- MonoScript | PlayerInputFacade | path ID 492
+- MonoScript | InventorySpellSlotsController | path ID 493
+- MonoScript | BuffEffectController | path ID 495
+- MonoScript | iOSPostProcessBuild | path ID 497
+- MonoScript | GUIHelpers | path ID 507
+- MonoScript | InputActionPropertyDrawer | path ID 509
+- MonoScript | AxisControl | path ID 510
+- MonoScript | AchievementsControllerSteam | path ID 515
+- MonoScript | PlayerInputEditorAnalytic | path ID 519
+- MonoScript | InputDualShockDisabler | path ID 523
+- MonoScript | AimerInputModule | path ID 524
+- MonoScript | InputActionAssetEditor | path ID 526
+- MonoScript | UnitModifierPlayerBuildupDuration | path ID 527
+- MonoScript | InputFocus | path ID 528
+- MonoScript | InputLatencyCalculator | path ID 529
+- MonoScript | ObjectPoolController | path ID 531
+- MonoScript | NativeInputRuntime | path ID 532
+- MonoScript | UnitControllerNPCBossIrma | path ID 533
+- MonoScript | UnitControllerBossSculptorWandaDash | path ID 534
+- MonoScript | InputControlLayout | path ID 537
+- MonoScript | InputEventTrace | path ID 542
+- MonoScript | InputSystemObject | path ID 550
+- MonoScript | UIScreenEffect | path ID 557
+- MonoScript | GamepadVibrationSO | path ID 559
+- MonoScript | UnitModifierSpellIchorDebtReturn | path ID 560
+- MonoScript | GamepadButtonPropertyDrawer | path ID 562
+- MonoScript | DialogueController | path ID 564
+- MonoScript | PlayerController | path ID 566
+- MonoScript | LocalizeTarget_UnityUI_RawImage | path ID 572
+- MonoScript | AdvancedDropdownGUI | path ID 578
+- MonoScript | PlayerInputManager | path ID 585
+- MonoScript | PlayerInputManagerEditor | path ID 587
+- MonoScript | Touch | path ID 588
+- MonoScript | PlayerInput | path ID 589
+- MonoScript | ButtonWithTwoModifiers | path ID 590
+- MonoScript | UIHighlightable | path ID 594
+- MonoScript | SavePointRegainControlPanel | path ID 598
+- MonoScript | UIImageCrop | path ID 601
+- MonoScript | Gamepad | path ID 602
+- MonoScript | BossLaiosArenaController | path ID 603
+- MonoScript | InputAssetEditorUtils | path ID 605
+- MonoScript | ItemHUD | path ID 611
+- MonoScript | InputStateBuffers | path ID 612
+- MonoScript | ControlSchemesView | path ID 613
+- MonoScript | StateMachinePlayerHealing | path ID 614
+- MonoScript | TutorialController | path ID 616
+- MonoScript | LightRays2DCanvas | path ID 619
+- MonoScript | InventoryWeaponSlotController | path ID 620
+- MonoScript | UnitPawnEnemy6Jumper | path ID 628
+- MonoScript | BossInfantArenaController | path ID 640
+- MonoScript | UnitControllerNPCSculptor | path ID 641
+- MonoScript | PlayerItemSpellChainLightningOrb | path ID 642
+- MonoScript | SavePointPanelCategoryController | path ID 648
+- MonoScript | Boss2ChokranArenaController | path ID 649
+- MonoScript | InputDeviceMatcher | path ID 650
+- MonoScript | PlayerModifierController | path ID 654
+- MonoScript | PlayerItemSpellSpawnUnit | path ID 659
+- MonoScript | EventInput | path ID 661
+- MonoScript | CUIBezierCurve | path ID 663
+- MonoScript | OnScreenButton | path ID 666
+- MonoScript | EditorHelpers | path ID 667
+- MonoScript | PlayerItemSpell | path ID 670
+- MonoScript | UnitControllerBossWanda2Skin | path ID 671
+- MonoScript | UISoundPlayer | path ID 672
+- MonoScript | AnyKeyControl | path ID 673
+- MonoScript | SceneStreamerController | path ID 679
+- MonoScript | InputBindingComposite | path ID 683
+- MonoScript | WebGLJoystick | path ID 686
+- MonoScript | UnitShaderController | path ID 688
+- MonoScript | IntegerControl | path ID 691
+- MonoScript | ShopController | path ID 693
+- MonoScript | InputActionTreeView | path ID 695
+- MonoScript | EditorInputControlLayoutCache | path ID 698
+- MonoScript | DoubleControl | path ID 701
+- MonoScript | PlayerInputKeyboard | path ID 703
+- MonoScript | MapPredefinedMarkerUpgrade | path ID 704
+- MonoScript | EditorPlayerSettingHelpers | path ID 705
+- MonoScript | ItemHUDActive | path ID 713
+- MonoScript | InputUserAccountHandle | path ID 720
+- MonoScript | InputActionTreeViewItems | path ID 722
+- MonoScript | DefaultInputControlPickerLayout | path ID 723
+- MonoScript | PlayerItemSpellReviveGraves | path ID 724
+- MonoScript | UnitCommandJump | path ID 728
+- MonoScript | InputEvent | path ID 729
+- MonoScript | PlayerInputEditor | path ID 732
+- MonoScript | InventoryAmuletSlotsController | path ID 733
+- MonoScript | TouchControl | path ID 735
+- MonoScript | CutsceneController | path ID 739
+- MonoScript | InputActionsEditorState | path ID 743
+- MonoScript | XInputController | path ID 746
+- MonoScript | UnitControllerBossWanda2 | path ID 748
+- MonoScript | InputActionSerializationHelpers | path ID 755
+- MonoScript | CameraController | path ID 757
+- MonoScript | UnitModifierPlayerDashDamages | path ID 758
+- MonoScript | HealthEntityBossChokran | path ID 759
+- MonoScript | KeyControl | path ID 761
+- MonoScript | SceneController | path ID 765
+- MonoScript | AudioController | path ID 769
+- MonoScript | SegmentedControl | path ID 776
+- MonoScript | PlayerItemSpellParasite | path ID 781
+- MonoScript | InputControlDropdownItem | path ID 785
+- MonoScript | InputSystemPlugin | path ID 789
+- MonoScript | PlayerParryController | path ID 790
+- MonoScript | UnitModifierAttackSpeed | path ID 791
+- MonoScript | InputActionImporter | path ID 794
+- MonoScript | CameraSettingsSO | path ID 798
+- MonoScript | UnitControllerNPCWanda | path ID 799
+- MonoScript | InputBindingResolver | path ID 802
+- MonoScript | StickControl | path ID 804
+- MonoScript | UnitControllerBossWanda1 | path ID 806
+- MonoScript | ButtonItemPickableGroup | path ID 808
+- MonoScript | PlayerItemSpellTwoPillars | path ID 811
+- MonoScript | UIParticleSystem | path ID 814
+- MonoScript | InputActionMap | path ID 815
+- MonoScript | InputFeatureNames | path ID 818
+- MonoScript | EditorWindowSpaceProcessor | path ID 819
+- MonoScript | BossWandaTentacleController | path ID 821
+- MonoScript | UIMultiplyEffect | path ID 828
+- MonoScript | MatchingControlPaths | path ID 830
+- MonoScript | UI_InfiniteScroll | path ID 837
+- MonoScript | UnitModifierHeal | path ID 841
+- MonoScript | ITextInputReceiver | path ID 843
+- MonoScript | UILineTextureRenderer | path ID 845
+- MonoScript | InputActionMapsTreeViewItem | path ID 846
+- MonoScript | UnitPawnBossSculptorWandaDash | path ID 847
+- MonoScript | UnitControllerLaiosPalm | path ID 849
+- MonoScript | InputEventStream | path ID 852
+- MonoScript | InputActionDebuggerWindow | path ID 856
+- MonoScript | PlayerGravesController | path ID 860
+- MonoScript | UnitModifierDamageInput | path ID 862
+- MonoScript | ScrollPositionController | path ID 864
+- MonoScript | LayeredMusicController | path ID 866
+- MonoScript | UnitPawnEnemy7Mosquito | path ID 871
+- MonoScript | Vector3Control | path ID 872
+- MonoScript | AchievementsControllerGog | path ID 873
+- MonoScript | StateMachinePhaseController | path ID 874
+- MonoScript | UnitControllerBossInfant | path ID 877
+- MonoScript | InputControlPathEditor | path ID 879
+- MonoScript | OnScreenControl | path ID 882
+- MonoScript | InputControlScheme | path ID 883
+- MonoScript | UnitControllerLaiosHead | path ID 889
+- MonoScript | UIGridRenderer | path ID 891
+- MonoScript | UILinearDodgeEffect | path ID 904
+- MonoScript | BossInfantPositionController | path ID 907
+- MonoScript | InputDeviceDescription | path ID 911
+- MonoScript | UICircle | path ID 918
+- MonoScript | ControlSchemeCommands | path ID 921
+- MonoScript | UILineRenderer | path ID 923
+- MonoScript | AdditiveSceneController | path ID 924
+- MonoScript | MapPredefinedMarkerDoor | path ID 925
+- MonoScript | PlayerInputBase | path ID 927
+- MonoScript | UnitCommandAttack | path ID 932
+- MonoScript | SavePointPickerButtonBase | path ID 933
+- MonoScript | PlayerItemSpellSpike | path ID 944
+- MonoScript | InputActionAssetDrawer | path ID 947
+- MonoScript | InputActionEditorToolbar | path ID 949
+- MonoScript | IInputInteraction | path ID 950
+- MonoScript | LetterBoxController | path ID 953
+- MonoScript | ShopGridController | path ID 957
+- MonoScript | UnitModifierParryDamageOutput | path ID 960
+- MonoScript | InputDeviceBuilder | path ID 966
+- MonoScript | InputEventTreeView | path ID 979
+- MonoScript | StateActionAttack | path ID 981
+- MonoScript | InputActionsTreeViewItem | path ID 982
+- MonoScript | DisasterRecoveryButton | path ID 986
+- MonoScript | FlowMap | path ID 987
+- MonoScript | ChainUnitJumper | path ID 991
+- MonoScript | IInputRuntime | path ID 993
+- MonoScript | InputAnalytics | path ID 995
+- MonoScript | AndroidGameController | path ID 999
+- MonoScript | BossIrmaArenaController | path ID 1001
+- MonoScript | UnitControllerBoss2 | path ID 1002
+- MonoScript | InputActionCodeGenerator | path ID 1004
+- MonoScript | HealingTriggerProperties | path ID 1006
+- MonoScript | InputControlExtensions | path ID 1007
+- MonoScript | InputState | path ID 1008
+- MonoScript | UnitControllerEnemy12_Priest | path ID 1009
+- MonoScript | MinistunSettings | path ID 1014
+- MonoScript | UISupport | path ID 1016
+- MonoScript | InputControlTreeView | path ID 1017
+- MonoScript | IInputStateChangeMonitor | path ID 1020
+- MonoScript | SavePointPickerButton | path ID 1026
+- MonoScript | CUIGraphic | path ID 1028
+- MonoScript | Touchscreen | path ID 1031
+- MonoScript | StateMachineBossTheFirstOneHeal | path ID 1033
+- MonoScript | InputActionSetupExtensions | path ID 1034
+- MonoScript | TriggerTutorialParry | path ID 1037
+- MonoScript | UnitModifierHealingProtector | path ID 1039
+- MonoScript | UI_TweenScale | path ID 1042
+- MonoScript | InputEditorAnalytics | path ID 1046
+- MonoScript | DpadControl | path ID 1048
+- MonoScript | SavePointLearnSpellsPanel | path ID 1049
+- MonoScript | BossMoon2PositionController | path ID 1050
+- MonoScript | IOSGameController | path ID 1052
+- MonoScript | ReturnKeyTriggersButton | path ID 1061
+- MonoScript | OptionsPanelController | path ID 1062
+- MonoScript | UnitAnimatorControllerBossInfant | path ID 1063
+- MonoScript | InputValue | path ID 1064
+- MonoScript | ButtonExpanded | path ID 1066
+- MonoScript | LocalizeTarget_TextMeshPro_UGUI | path ID 1067
+- MonoScript | InputButtonHoldController | path ID 1068
+- MonoScript | InputMetrics | path ID 1070
+- MonoScript | TEMP_InputInstructions | path ID 1078
+- MonoScript | UIScrollToSelection | path ID 1079
+- MonoScript | PlayerItemConsumableHealth | path ID 1083
+- MonoScript | InputControlLayoutAttribute | path ID 1084
+- MonoScript | PlayerItemSpellMinDistanceToEnemy | path ID 1091
+- MonoScript | UnitControllerBossIrma1 | path ID 1095
+- MonoScript | OptionsControlsPanel | path ID 1097
+- MonoScript | OSXGameController | path ID 1101
+- MonoScript | IInputDiagnostics | path ID 1107
+- MonoScript | InputActionDrawerBase | path ID 1108
+- MonoScript | InputActionReferenceSearchProviders | path ID 1111
+- MonoScript | UnitModifierSpellCost | path ID 1113
+- MonoScript | IInputUpdateCallbackReceiver | path ID 1118
+- MonoScript | UnitPawnEnemy23BoyDasher | path ID 1121
+- MonoScript | InputActionRebindingExtensions | path ID 1125
+- MonoScript | StandaloneInputModuleEditor | path ID 1126
+- MonoScript | SwitchInputModule | path ID 1128
+- MonoScript | IInputStateTypeInfo | path ID 1131
+- MonoScript | DefaultControls | path ID 1137
+- MonoScript | CanvasUpdateRegistry | path ID 1138
+- MonoScript | UnitModifierManaHealPower | path ID 1144
+- MonoScript | CooldownButton | path ID 1145
+- MonoScript | InputSettingsiOSProvider | path ID 1147
+- MonoScript | LayerVolumeChangeSettings | path ID 1149
+- MonoScript | IInputDeviceCommandInfo | path ID 1154
+- MonoScript | UIView | path ID 1158
+- MonoScript | UnitControllerEnemy24_BoyUnstable | path ID 1161
+- MonoScript | SlowMoController | path ID 1162
+- MonoScript | InputDebuggerWindow | path ID 1164
+- MonoScript | InputSettings | path ID 1168
+- MonoScript | CanvasAspectRatio | path ID 1169
+- MonoScript | InputActionAssetManager | path ID 1177
+- MonoScript | MenuItemToggleCollisionLayer | path ID 1178
+- MonoScript | UnitControllerEnemy15_Toxic | path ID 1179

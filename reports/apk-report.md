@@ -371,6 +371,228 @@
 - \`Lorg/fmod/FMODAudioDevice;\`
 - \`Lorg/fmod/a;\`
 
+## Unity IL2CPP control and interface type names
+- \`VirtualMouse\`
+- \`A - Light Attack\`
+- \`S - Heavy Attack\`
+- \`W:    Character:   KeyCode:   Modifiers:  V  at\`
+- \`Required\`
+- \`all control schemes are already paired to matching devices\`
+- \`Inner Exception:  Input Caret Instance Invalid length\`
+- \`action buttons\`
+- \`at  attribute is required because Type.ContainsGenericParameters is true. but only wrote  bytes\`
+- \`se. implementing interface ITextEdition is missing the implementation for hideMobileInput. Assigning a val\`
+- \`ue to ITextEdition.hideMobileInput will not update its value. implementing interface ITextEdition is missi\`
+- \`ng the implementation for hideMobileInput. Calling ITextEdition.hideMobileInput of this type will always r\`
+- \`eturn false. implementing interface ITextEdition is missing the implementation for keyboardType. Assigning\`
+- \`a value to ITextEdition.keyboardType will not update its value. implementing interface ITextEdition is mis\`
+- \`sing the implementation for keyboardType. Calling ITextEdition.keyboardType of this type will always retur\`
+- \`instead is an unsupported hash algorithm for RSA signing is greater than the number of available inputs\`
+- \`s still active which is not an InputControl with value type  while executing\`
+- \`InputSystem.onDeviceCommand\`
+- \`InputSystem.onFindLayoutForDevice\`
+- \`InputUser.onChange\`
+- \`InputUser.onUnpairedDeviceUsed\`
+- \`y:  yields a control of type  zzz\`
+- \`already contains a control scheme called\`
+- \`it is the only controller left\`
+- \`has not been registered as a control layout\`
+- \`is not an InputBindingComposite\`
+- \`is not an InputControl\`
+- \`to control of type\`
+- \`falling back to using InputDevice\`
+- \`input is not enabled\`
+- \`no actions set on PlayerInput\`
+- \`InputUpdateType.None\`
+- \`InputSystem.settings.updateMode is set to\`
+- \`Proxy Authentication Required\`
+- \`Layout Rebuilder for\`
+- \`Oculus Touch Controller\`
+- \`Oculus Quest Controller\`
+- \`Spatial Controller\`
+- \`OpenVR Controller\`
+- \`UI will not render properly\`
+- \`th---do-not-eager-compile--drag-hover--error--first--has-icon--has-title--horizontal--info--inner-input-fi\`
+- \`Experimental.UIElements.GetElementType\`
+- \`returned null..UIElements.asset.bat.cctor.com.config.ctor.dll.exe.fonts.json.loc.local.mono.rem//\`
+- \`Button\`
+- \`DiscreteButton\`
+- \`Keyboard\`
+- \`Gamepad\`
+- \`META http-equiv\`
+- \`leftButton\`
+- \`Touchscreen\`
+- \`touch\`
+- \`XRController\`
+- \`Pointer Input Module of type:\`
+- \`called outside OnGUI\`
+- \`Corrosive Touch +\`
+- \`ENABLING UI:\`
+- \`Corrosive Touch -\`
+- \`A label in the input string resulted in an invalid zero-length string\`
+- \`Use the JsonPropertyAttribute to specify another name.A name is required when setting property name state.\`
+- \`d control must have at least two Button childrenA stepper must have two Button childrenA subtraction must\`
+- \`AbkhazianAbortAborting Gauntlet Run because Animator is AttackingAbsoluteUriAccelerometerAcceptAccept-Char\`
+- \`Achievements data initalized. Updating local dataAchievementsControllerSteam::ConstructorAchievementsContr\`
+- \`AchievementsControllerSteam::OnCallbackStatsReceived\`
+- \`must be part of an InputActionAsset in order to be able to create an InputActionReference for itAction\`
+- \`AgeAimer Input Module is incompatible with the StandAloneInputSystem\`
+- \`REQUIRED.An attribute of type NOTATION must not be declared on an element declared EMPTY.An element of inn\`
+- \`An undefined NumberStyles value is being used.AnalogAndroidAndroidGameControllerAndroidGamepadAndroidGamep\`
+- \`adWithDpadAxesAndroidGamepadWithDpadButtonsAndroidJNIHelper.GetSignature: using Byte parameters is obsolet\`
+- \`use SByte array insteadAndroidJoystickAndroidSensorAnimation UpdateAnimation object has been recycled. Use\`
+- \`Assembly qualifed type name is requiredAssemblyNameAssertAssertion failedAssertion failure.Assertion has f\`
+- \`unexpectedlyAtomic valueAttack1Attack2Attempt to access the method failed.Attempt to access the type faile\`
+- \`Attempted to set property InputSystem.actions during Play-mode which is not supported. Assigning this prop\`
+- \`AudioObject:AudioSourceAudioUIDictionarySO::GetID - app not playing\`
+- \`Touch\`
+- \`TouchPress\`
+- \`TouchPhase\`
+- \`BBEVEL_ONBackBack to full health. Time passed: BackgroundBackspaceBad GatewayBad JSON escape sequence:\`
+- \`No fire solutionBambaraBase NodeBase64Base64BinaryBaseTreeViewController.CreateWrappersBaseTreeViewControl\`
+- \`ler.ExpandItemByIndexBaseUtcOffsetBaseUtcOffsetDeltaBaseVerticalCollectionView.RebuildBaseVerticalCollecti\`
+- \`Boss OC jump target unit is null. Defaulting to player.BossWandaArenaController::Awake\`
+- \`BtnActionBtnAttack1BtnAttack2BtnDashBtnHealBtnInventoryBtnJumpBtnMapBtnParryBtnSpell1BtnSpell2Btn_Buffer a\`
+- \`Buffer too small. count/offset wrong.Buffer too small. numBytes/offset wrong.BufferListBuildBuildCommandsL\`
+- \`istBuilt-in PipelineBulgariaaBulgarianBulgarian\`
+- \`Burst.Compiler.IL.Tests.TestCompilerAttributeButtonButton\`
+- \`Button.onClickButtonGridButtonWithOneModifierButtonWithTwoModifiersByref qualifier must be the last one of\`
+- \`a typeByteByte array for GUID must be exactly\`
+- \`t supported by the frameworkCUTSCENECWDCache-ControlCachesCalendarTypeCall not implementedCallResult funct\`
+- \`such as from InputAction callbacks\`
+- \`it will query UI state from the last frameCallingConventionCallstack\`
+- \`to Guid.Can not convert\`
+- \`to UInt16.Can not convert\`
+- \`to UInt32.Can not convert\`
+- \`to UInt64.Can not convert\`
+- \`t set handle: the playable is not an AnimatorControllerPlayable.Can\`
+- \`t set itemsSource directly. Override this controller to manage tree data.Can\`
+- \`Cannot add control\`
+- \`bytesCannot add control scheme without name to asset Cannot add map\`
+- \`or change elements of InputActionAsset\`
+- \`or change elements of InputActionMap\`
+- \`that was not acquired through a Capture operation or that has already been the argument to a Set call.Cann\`
+- \`Cannot change state of bitfield control\`
+- \`because the type requires a\`
+- \`to deserialize correctly.Cannot determine device layout to use based on control path\`
+- \`Cannot find control\`
+- \`of control\`
+- \`Cannot find control layout\`
+- \`Cannot find control scheme\`
+- \`Cannot find control with path\`
+- \`Cannot find default control scheme\`
+- \`Cannot find input control\`
+- \`used in control\`
+- \`Cannot find matching control scheme for Cannot find parent\`
+- \`referenced by control\`
+- \`devices must be added at rootCannot iterate over controls in event of type\`
+- \`has exited.Cannot process request because the process has exited.Cannot query value of control\`
+- \`Cannot queue state event for control\`
+- \`from control\`
+- \`control is a\`
+- \`s not a child of the ScrollView content-container.Cannot send delta state events against bitfield controls\`
+- \`Cannot set control scheme\`
+- \`Property requires a non-null value.Cannot write a null value for property\`
+- \`Property requires a value.Cannot write raw JSON as BSON.Cannot write to a closed TextWriter.Cannot write t\`
+- \`o the registry key.Cant be Guid.EmptyCanvasCanvasUpdate.LatePreRenderCanvasUpdate.LayoutCanvasUpdate.PostL\`
+- \`ayoutCanvasUpdate.PreRenderCanvasUpdate.PrelayoutCapacityCapacity cannot be negativeCapacity exceeds maxim\`
+- \`Clips of type Cloning Machine Used CountCloseCloseExClosedCloud and local have same timestamp. Continuing.\`
+- \`calling callback.ContextID: ContinueContinueCommandPipelineControlControl\`
+- \`Control\`
+- \`does not support writingControl\`
+- \`is modifying the child of another control but is marked as an arrayControl\`
+- \`is not part of InputStateHistoryControl\`
+- \`is not tracked by target historyControl\`
+- \`Control Playable\`
+- \`is referencing the same PlayableDirector component than the one in which it is playing.Control Track Clip\`
+- \`is causing a prefab to instantiate itself recursively. Aborting further instances.Control count cannot exc\`
+- \`eed ushort.MaxValueControl count per binding cannot exceed byte.MaxValue\`
+- \`Control with no name in layout\`
+- \`ControllerConversion buffer overflow.Converting PrimitiveValue to DateTimeCookieCookie format error.CopyCo\`
+- \`CustomCreationConverter should only be used while deserializing.CustomInputsCutCzechCzech\`
+- \`DashDashes are in the wrong position for GUID parsing.DataData EnciphermentData at the root level is inval\`
+- \`ypeDescriptor.DebugLogHandlerDecDecemberDecimalDecimal byte array constructor requires an array of length\`
+- \`inclusive.Decipher OnlyDeclaringMemberDeclaringMethodDeclaringTypeDefaultDefault UI MaterialDefault constr\`
+- \`DesignerDesktopDespawn: Dest or count is negative.Destination address requiredDestination array is not lon\`
+- \`exceeds maximum supported control count of\`
+- \`controls\`
+- \`is not a HIDDevice does not existDevice for control\`
+- \`Dialogue over when started.DialogueController::ShowDialogue\`
+- \`target dialogue position transform is nullDialogueController::ShowDialogue\`
+- \`Disable All BehavioursDisabledDiscardDisconnectMsg.ProcessDiscreteButtonDisk full. Path\`
+- \`Dropdown ListDropdown.valueDropped Object: DtdProcessingDualShockDualShock4GamepadAndroidDue time too larg\`
+- \`Early HintsEdit ControlsEditBarEffectiveKeySize value must be at least as large as the KeySize value.Eithe\`
+- \`for control\`
+- \`United StatesEnglish/ZimbabweEnhanced Key UsageEnhancedTouch API is not enabled\`
+- \`call EnhancedTouchSupport.Enable\`
+- \`enum.Enumeration already finishedEnumeration already finished.Enumeration data type required.Enumeration h\`
+- \`Error in ReadConsoleInput Error in element Error in the application.Error loading\`
+- \`KeyCode:\`
+- \`EventInputEventSystemEventTreeFacade::RunEventTree\`
+- \`savePointGUID is null or emptyEvent_General_StartDialogue::Run\`
+- \`could not find unit with GUID: Event_Unit_SetFlip::Run\`
+- \`OnUnitDeath: Events cannot be dispatched more than once.EweExactSpellingExceeded budget for maximum input\`
+- \`event throughput per InputSystem.Update\`
+- \`Discarding remaining events. Increase InputSystem.settings.maxEventBytesPerUpdate or set it to 0 to remove\`
+- \`bytesExpected control\`
+- \`bytes insteadExpecting chunk trailer.Expecting control of type\`
+- \`ld zlib installed. Version 1.2.0.4 or later is required.Failed to load UIElements default shaderFailed to\`
+- \`load UIElements default world-space shaderFailed to parse server key/certificateFailed to read data to TLS\`
+- \`FavoritesFeature is not supported for remote machines.Feature requires a process identifier.FebFebruaryFew\`
+- \`No fileFiles not existing. Continuing.Filipino\`
+- \`which is required to override its sizeFont\`
+- \`which is required to override its styleFont asset\`
+- \`e cannot be zeroGDayGETGLOW_ONGMTGMonthGMonthDayGUI Error: You are popping more GUIClips than you are push\`
+- \`ing. Make sure they are balanced.GUI Error: You are pushing more GUIClips than you are popping. Make sure\`
+- \`they are balanced.GUICameraGUILayout state invalid. Verify that all layout begin/end calls match.GUIStyle\`
+- \`chosen language: GameSession waiterGamepadGandaGateway TimeoutGauntlet attach: jump key held mid-air - Gau\`
+- \`istory record is not validGiven type must be an InputProcessor\`
+- \`IInputInteraction\`
+- \`or InputBindingComposite\`
+- \`GuidGuid should contain 32 digits with 4 dashes\`
+- \`Guid string should only contain hexadecimal characters.GujaratiGujarati\`
+- \`characters.HealHealingTrigger::SendHeal\`
+- \`receiver is nullHealth entity: Health in RangeHealthSystemHebrewHebrew\`
+- \`ful/Wave DistortionHidden/Colorful/White BalanceHidden/Colorful/WiggleHidden/GraphView/GraphViewUIEHidden/\`
+- \`Internal-GUITextureClipTextHidden/Internal-UIE-ColorConversionBlitHidden/Internal-UIRAtlasBlitCopyHidden/I\`
+- \`nternal-UIRDefaultHidden/Internal-UIRDefaultWorldHidden/TextCore/Distance Field SSDHidden/UIE-AtlasBlitHid\`
+- \`den/UIE-ColorConversionBlitHidden/UIE-EditorHidden/UIE-GraphViewHidden/UIE-RuntimeHidden/UIE-RuntimeWorldH\`
+- \`idden/UIElements/EditorUIEHighFreqMotorHighest playerIndex of\`
+- \`charactersIDREFIDREFSIIIIIIM UsedIMESelectedIMGUIContainerINFINTERNAL ERROR: should not happen.IO errorIOS\`
+- \`List.Index must not be uint.MaxValueIndex out of range: Index was less than the array\`
+- \`em.onDeviceChangeInput System not yet initializedInput buffer contains insufficient data.Input data cannot\`
+- \`be coded as a valid CRL.Input data cannot be coded as a valid certificate.Input string\`
+- \`is not a valid decimal.Input string\`
+- \`is not a valid double.Input string\`
+- \`is not a valid integer.Input string\`
+- \`is not a valid number.Input string does not contain a valid encoding of the\`
+- \`parameter.Input string was either empty or contained only whitespace.Input string was not in a correct for\`
+- \`mat.Input: FakedInput: TouchInputAction.DisableInputAction.EnableInputActionCallbackInputActionMap.Resolve\`
+- \`BindingsInputActionResolveConflictInputCheckForUnpairedDeviceActivityInputDeviceBuilder error. Couldn\`
+- \`t find control\`
+- \`InputDualShockDisabler: keeping\`
+- \`InputDualShockDisabler::SetDevicesEnabledPS\`
+- \`InputEventTraceInputEventTrace.onEventInputFieldInputField\`
+- \`InputField\`
+- \`InputField.onEndEditInputField.onSubmitInputField.valueInputManager.RegisterCustomTypesInputManager.Restor\`
+- \`eDevicesAfterDomainReloadInputSystem.AddDeviceInputSystem.ResetInputSystem.TryFindMatchingControlLayoutInp\`
+- \`utSystem.onActionChangeInputSystem.onActionsChangeInputSystem.onAfterUpdateInputSystem.onBeforeUpdateInput\`
+- \`System.onDeviceChangeInputSystem.onDeviceSettingsChangeInputSystem.onDeviceStateChangeInputSystem.onEventI\`
+- \`nputSystem.onLayoutChangeInputSystem.onSettingsChangeInputUpdateInputUser.onChangeInputUser.onPreFilterUnp\`
+- \`airedDeviceActivityInsertInsertChildControl has to be called with a slash-separated pathInsertion index wa\`
+- \`ce constructor requires a targetInstance is read-only.Instance not validInstantiate failed because the clo\`
+- \`type requires full trust.Insufficient space in the target location to copy the information.Insufficient st\`
+- \`Invalid image specifiedInvalid input block size.Invalid input update mode: Invalid keyword for font Invali\`
+- \`property.Invalid type input for node creation.Invalid type:\`
+- \`iningDiacriticalMarksforSymbolsIsCombiningHalfMarksIsCombiningMarksforSymbolsIsControlPicturesIsCurrencySy\`
+- \`imbuIsLowSurrogatesIsMalayalamIsMathematicalOperatorsIsMiscellaneousMathematicalSymbols-AIsMiscellaneousMa\`
+- \`IsSyriacIsTagalogIsTagbanwaIsTaiLeIsTamilIsTeluguIsThaanaIsThaiIsTibetanIsUnifiedCanadianAboriginalSyllabi\`
+- \`Italian/ItalyItalian/SwitzerlandItemItem Item BackgroundItem CheckmarkItem GUID not assignedItem LabelItem\`
+- \`JavaneseJohabJoystickJsonToken\`
+- \`DescKeyboardKeyboard\`
+- \`Layout builder\`
+- \`returned null when invokedLayout has not been set on control\`
+
 ## Android manifest / package information
 ~~~
 package: name='com.vocies61.Moonscars' versionCode='1' versionName='1.0' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'

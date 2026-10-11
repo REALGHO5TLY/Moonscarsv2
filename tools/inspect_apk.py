@@ -143,6 +143,20 @@ try:
         for name in classnames[:240]:
             add(f"- \`{name}\`")
         add("")
+
+        add("## Unity IL2CPP control and interface type names")
+        meta_name="assets/bin/Data/Managed/Metadata/global-metadata.dat"
+        if meta_name in names:
+            import re
+            data=z.read(meta_name)
+            strs=[]
+            for mm in re.finditer(rb"[A-Za-z_][A-Za-z0-9_:.+ /-]{4,105}",data):
+                s=mm.group(0).decode("ascii","ignore").strip()
+                if any(w in s.lower() for w in ("touch", "control", "joystick", "input", "gamepad", "canvas", "virtual", "keyboard", "button", "overlay", "keybind", "keycode", "ui", "attack", "parry", "heal", "witchery")) and s not in strs:
+                    strs.append(s)
+                if len(strs)>=220: break
+            for s in strs: add(f"- \`{s.replace(chr(96),'')}\`")
+        add("")
         add("## Android manifest / package information")
         add("~~~")
         command = ["aapt","dump","badging",str(apk)]
